@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Flower Nest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>The Flower Nest</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#varieties">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Fresh Blooms for Every Moment</h1>
+      <button onclick="window.location.href='#contact'">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to The Flower Nest! We offer vibrant, fresh flowers for every occasion. From weddings to birthdays, brighten up your moments with our exquisite floral collections.</p>
+  </section>
+
+  <!-- Varieties Section -->
+  <section id="varieties">
+    <h2>Our Services</h2>
+    <div class="grid-container">
+      <div class="tile">
+        <img src="red_divine.jpg" alt="Red Divine Rose">
+        <h3>Red Divine Rose</h3>
+        <p>Symbolizing love, these velvety petals express passion and elegance.</p>
+      </div>
+      <div class="tile">
+        <img src="daisy.jpg" alt="Daisy">
+        <h3>Daisy</h3>
+        <p>Bright and cheerful, daisies spread joy with their simplicity and charm.</p>
+      </div>
+      <div class="tile">
+        <img src="chrysanthemum.jpg" alt="Chrysanthemum">
+        <h3>Chrysanthemum</h3>
+        <p>Bold and beautiful, these blooms bring life to any floral arrangement.</p>
+      </div>
+      <div class="tile">
+        <img src="white-lily.jpg" alt="White Lily">
+        <h3>White Lily</h3>
+        <p>Elegant and serene, lilies are perfect for creating tranquil moments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="content">
+      <h2>Contact Me</h2>
+      <p>I’m always open to new deal. Let’s connect!</p>
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="4d3ffa20-44e6-4cfb-97e7-8df21cf7e509">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 The Flower Nest. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
